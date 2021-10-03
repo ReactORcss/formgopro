@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>formGoPro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+  <section class="product">
+    <div class="container">
+      <div class="row">
+        <div class="col-5">
+          <div class="product__choice">
+            <div class="product__line-top d-flex">
+              <label class="col-2 menu__list">Product</label>
+              <div class="menu__item_wrapper">
+                <select class="menu__item menu__item_choice_gopro">
+                  <option selected value="1">GoPro Session Camera</option>
+                  <option value="2">GoPro Session Camera</option>
+                  <option value="3">GoPro Session Camera</option>
+                </select>
+                <span class="down_arrow_blue">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="6px">
+                    <path fill-rule="evenodd" fill="rgb(56, 140, 204)"
+                      d="M9.716,1.625 L5.666,5.713 C5.298,6.084 4.702,6.084 4.334,5.713 L0.284,1.625 C-0.084,1.253 -0.084,0.650 0.284,0.278 C0.652,-0.094 1.248,-0.094 1.616,0.278 L5.000,3.693 L8.384,0.278 C8.752,-0.094 9.348,-0.094 9.716,0.278 C10.084,0.650 10.084,1.253 9.716,1.625 Z" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="product__line d-flex">
+                <span class="menu__list">Product Price</span>
+                <div class="d-flex">
+                  <label class="product__price-wrapper d-flex">
+                    <input class="check-box" type="checkbox">
+                    <span class="check-style"></span>
+                    <span class="check-price">399.99 USD</span>
+                  </label>
+                </div>
+            </div>
+            <div class="product__line d-flex">
+                <span class="menu__list">Mobile Apps</span>
+                <div class="menu__item d-flex">
+                  <label class="product__price-wrapper product__price-wrapper-free d-flex">
+                    <input class="check-box" type="checkbox">
+                    <span class="check-style"></span>
+                    <span class="check-price">FREE</span>
+                  </label>
+                </div>
+            </div>
+            <div class="item__name item__name-access">
+              Accessories
+            </div>
+            <div class="product__line d-flex">
+              <span class="menu__list">Smart Remote</span>
+              <div class="menu__item d-flex">
+                <label class="product__price-wrapper">
+                  <input class="check-box_black" type="checkbox">
+                  <span class="check-style_black"></span>
+                  <span class="check-price">79.99 USD</span>
+                </label>
+              </div>
+            </div>
+            <div class="product__line d-flex">
+              <span class="menu__list">Auto Charger</span>
+              <div class="menu__item d-flex">
+                <label class="product__price-wrapper">
+                  <input class="check-box_black" type="checkbox">
+                  <span class="check-style_black"></span>
+                  <span class="check-price">29.99 USD</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offset-3 col-4 product__line-top">
+          <div class="order">
+            <div class="myorder">
+              My Order
+            </div>
+            <div class="order__details">
+              <div class="order__item order__item-top d-flex">
+                  <div class="name">
+                    Product Sub-total
+                  </div>
+                  <div class="price">
+                    399.99 USD
+                  </div>
+              </div>
+              <div class="order__item d-flex">
+                <div class="name">
+                  Mobile Apps
+                </div>
+                <div class="price">
+                  Free
+                </div>
+              </div>
+              <div class="order__item d-flex">
+                <div class="name">
+                  Auto Charger
+                </div>
+                <div class="price">
+                  -
+                </div>
+              </div>
+              <div class="order__item order__item-bottom d-flex">
+                <div class="name">
+                  Smart Remote
+                </div>
+                <div class="price">
+                  79.99 USD
+                </div>
+              </div>
+              <div class="order__total d-flex">
+                <div class="name-total">
+                  Total
+                </div>
+                <div class="price">
+                  479.98 USD
+                </div>
+              </div>
+              <div class="checkout">
+                <button type="submit" class="checkout__btn">Checkout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="customer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <form class="row">
+            <div class="col-2 item__name">
+              Customer Details
+            </div>
+            <div class="row">
+              <div class="col-8 d-flex input__names">
+                <label class="col-2">Name<span class="req__label">*</span></label>
+                <input class="col-3 customer__name" type="text" placeholder="First" required>
+                <input class="customer__lastname" type="text" placeholder="Last" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-8 d-flex input__email">
+                <label class="col-2" required>Email<span class="req__label">*</span></label>
+                <input class="customer__email type="email" placeholder="Email" required>
+              </div>
+            </div>
+            <div class="product__line-top customer__line-bottom d-flex">
+              <label class="col-2 menu__list">Country<span class="req__label">*</span></label>
+              <div class="menu__item_wrapper">
+                <select class="menu__item menu__item_choice" required>
+                  <option selected value="1">Select</option>
+                  <option value="2">England</option>
+                  <option value="3">Australia</option>
+                </select>
+                <span class="down_arrow_blue">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="6px">
+                    <path fill-rule="evenodd" fill="rgb(56, 140, 204)"
+                      d="M9.716,1.625 L5.666,5.713 C5.298,6.084 4.702,6.084 4.334,5.713 L0.284,1.625 C-0.084,1.253 -0.084,0.650 0.284,0.278 C0.652,-0.094 1.248,-0.094 1.616,0.278 L5.000,3.693 L8.384,0.278 C8.752,-0.094 9.348,-0.094 9.716,0.278 C10.084,0.650 10.084,1.253 9.716,1.625 Z" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="product__line d-flex">
+                <span class="menu__list menu__payment">Payment Method</span>
+                <div class="menu__item d-flex">
+                  <label class="payments">
+                    <div class="checkout buttons__payment d-flex">
+                      <div>
+                        <button type="button" class="payment_btn">Credit Card</button>
+                      </div>
+                      <div>
+                        <button type="button" class="payment_btn">Paypal/Credit Card</button>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="menu__item">
+                <label class="product__price-wrapper license__text">
+                  <input class="check-box_black" type="checkbox">
+                  <span class="check-style_black"></span>
+                  <span class="check-price"></span>I accept <span class="license__text-blue">End User License Agreement</span></span>
+                </label>
+              </div>
+            </div>
+            <div class="checkout__bottom">
+              <button type="submit" id="button" class="checkout__btn">Checkout</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>
